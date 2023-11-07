@@ -1,0 +1,175 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Export_Part" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="536,1870.6666666666667" sap2010:WorkflowViewState.IdRef="Export_Part_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Export_Part" sap:VirtualizedContainerService.HintSize="546,1806" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Teamcenter'" sap:VirtualizedContainerService.HintSize="484,164" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="80c190d97e506fb8a3a57379cdfbf2b1" Selector="&lt;html app='chrome.exe' title='Teamcenter - Home' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Teamcenter - Home" sap:VirtualizedContainerService.HintSize="484,1491.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="88e3b786-a42e-4d91-b515-b576ead5aeec" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '01'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88e3b786-a42e-4d91-b515-b576ead5aeec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://inpun0215nb:3000/#/com.siemens.splm.clientfx.tcui.xrt.showObject?d_uids=ARtVE5EQZ65lBC&amp;s_uid=ARtVE5EQZ65lBC&amp;uid=QAsVSJ3KZ65lBC" DesignTimeRectangle="215, 384, 21, 28" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'01'" FullSelectorArgument="&lt;webctrl class='aw-widgets-cellListCellTitle' parentid='main-view' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='aw-widgets-cellListCellTitle' parentid='main-view' tag='SPAN' type='' aaname='01' check:innerText='01' /&gt;" Guid="57831810-1e9f-44ac-851a-e4f4a5574c48" InformativeScreenshot="21bd8cc175028daccd23d20508144d25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teamcenter - Home' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="119, 384, 421, 76" FriendlyName="'01000069Revision:A'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;aw-scrollpanel&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' parentid='main-view' tag='DIV' visibleinnertext='01&amp;#xA;000069&amp;#xA;Revision:A' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main-view' tag='DIV' visibleinnertext='01&amp;#xA;000069&amp;#xA;Revision:A' class='aw-default-cell sw-row' aaname='' check:text='01000069Revision:A' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BUTTON'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f006906-9ede-4c7c-b5e5-9efb0052d74f" InformativeScreenshot="afe407e45864b25bb6e63ec51f98a883" Selector="&lt;webctrl aria-label='Open' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' type='button' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="0.5" DisplayName="Click 'Open'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88e3b786-a42e-4d91-b515-b576ead5aeec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://inpun0215nb:3000/#/com.siemens.splm.clientfx.tcui.xrt.showObject?d_uids=ARtVE5EQZ65lBC&amp;s_uid=ARtVE5EQZ65lBC&amp;uid=QAsVSJ3KZ65lBC" CvTextArea="1622, 503, 45, 21" CvTextArgument="Open" CvType="Text" DesignTimeRectangle="1581, 494, 86, 36" DesignTimeScaleFactor="1.5" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl class='aw-popup-cellContentContainer' parentid='ui-id-112' tag='DIV' aaname='Open' innertext='Open' visibleinnertext='Open' /&gt;" FuzzySelectorArgument="&lt;webctrl class='aw-popup-cellContentContainer' parentid='ui-id-112' tag='DIV' aaname='Open' innertext='Open' visibleinnertext='Open' type='' check:text='Open' /&gt;" Guid="ef942594-de8c-474e-976c-15be154f99e3" InformativeScreenshot="ba7c6e47e64cc7c1fe6a8f2fd29e93be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teamcenter - Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'A'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f05da21-b21b-4df5-8132-4d7a92c9444c" InformativeScreenshot="b4bae923c848a91ff7861ee120ef9cb9" Selector="&lt;webctrl aria-label='Attachments' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export To Excel'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88e3b786-a42e-4d91-b515-b576ead5aeec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://inpun0215nb:3000/#/com.siemens.splm.clientfx.tcui.xrt.showObject?page=Attachments&amp;pageId=attachments&amp;uid=AptVE9n5Z65lBC" DesignTimeRectangle="1618, 619, 96, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Export To Excel'" FullSelectorArgument="&lt;webctrl aria-label='Export To Excel' tag='BUTTON' aaname='Export To Excel' innertext='Export To Excel' visibleinnertext='Export To Excel' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Export To Excel' tag='BUTTON' aaname='Export To Excel' innertext='Export To Excel' visibleinnertext='Export To Excel' type='button' class='aw-commands-commandIconButton aw-commands-command aw-commandId-Awp0ExportToExcel aw-commands-commandWrapperHorizontal' check:text='Export To Excel' /&gt;" Guid="74cc007c-c8bb-4349-8ee6-77c85383c8b3" InformativeScreenshot="f65d04b2c515058354bfca7efe34ae8b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teamcenter - 000069/A;1-01' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1660, 631, 42, 40" ElementType="Text" FriendlyName="'Export To Excel'" FullSelectorArgument="&lt;webctrl aaname='Export To Excel' idx='2' parentid='main-view' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export To Excel' type='' parentid='main-view' tag='DIV' class='aw-commands-showIconLabel aw-commands-commandIconButtonText' check:innerText='Export To Excel' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88e3b786-a42e-4d91-b515-b576ead5aeec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://inpun0215nb:3000/#/com.siemens.splm.clientfx.tcui.xrt.showObject?page=Attachments&amp;pageId=attachments&amp;uid=AptVE9n5Z65lBC" DesignTimeRectangle="1682, 950, 120, 49" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Export'" FullSelectorArgument="&lt;webctrl aaname='Export' parentid='ui-id-188' parentname='subPanelForm' tag='BUTTON' innertext='Export' visibleinnertext='Export' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export' parentid='ui-id-188' parentname='subPanelForm' tag='BUTTON' innertext='Export' visibleinnertext='Export' type='button' class='sw-button ' check:text='Export' /&gt;" Guid="db887823-64f3-4500-b7d6-fc279613bb62" InformativeScreenshot="3a4a4e2779fabbfd6b1fc20498ca58ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teamcenter - 000069/A;1-01' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1701, 960, 82, 29" ElementType="Text" FriendlyName="'Export'" FullSelectorArgument="&lt;webctrl aaname='Export' parentid='ui-id-188' parentname='subPanelForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export' parentid='ui-id-188' parentname='subPanelForm' tag='DIV' type='' class='' check:innerText='Export' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAACXSURBVDhPY/j//z8YM/jo/ScLU2wAw+yZ/8EYyBEIt/7vUJkExxiKsWFkA0CakAGGYmwY2QAQhhkC48/cvhrMB4HNJw/8V0v3hcuBMSEDQKBsfj9c3L0uAy4HxsQYABKDyYHCCSYHxqQYgBXT3ABQwCEDDMPQDUDHoFAHBRxIIwgTDAOS8SAygEQMBJBMiE2SGAwx4D8DALdv7tACI51CAAAAAElFTkSuQmCC" InformativeScreenshot="612a66a37ca1e4d09035adbd63350ffd.jpg" Selector="&lt;html app='chrome.exe' title='Teamcenter - Home' /&gt;" Title="Teamcenter - Home" Url="http://inpun0215nb:3000/#/com.siemens.splm.clientfx.tcui.xrt.showObject?d_uids=ARtVE5EQZ65lBC&amp;s_uid=ARtVE5EQZ65lBC&amp;uid=QAsVSJ3KZ65lBC" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
